@@ -1,0 +1,123 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+    height: 100%;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    position: relative;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+    margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+:root {
+    --main-bcg: #201F2E;
+    --buttom-color: #44414E;
+    --footer-color:#0E0D13;
+;
+}
+
+*, p {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+}
+*{
+    background: var(--main-bcg);
+}
+
+.cards_container {
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0 32px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .cards_container {
+        justify-content: center;
+        text-align: -webkit-center;
+        display: block;
+    }
+}
+
+.card {
+    height: 420px;
+    width: 320px;
+    border-radius: 32px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 48.96%, rgba(14, 13, 19, 0.9) 89.58%);
+    margin: 0 0 32px;
+}
+
+@media screen and (max-width: 380px) {
+    .card {
+        height: 400px;
+        width: 300px;
+    }
+
+    .cards_container {
+        padding: 0;
+    }
+}
+
