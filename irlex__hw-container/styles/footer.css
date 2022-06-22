@@ -1,19 +1,16 @@
 
-footer {
+.footer {
     background-color: var(--footer-color);
     padding: 24px 32px;
-    height: 96px;
-    position: absolute;
+    position: fixed;
     width: 100%;
+    bottom: 0;
+    z-index: 100;
 }
-@media screen and (min-width: 1344px) {
-    .footer{
-        bottom: 0;
-    }
+.footer__container{
+    background-color: inherit;
 }
-
-
-.footer_button {
+.footer__button {
     color: white;
     background: var(--button-color);
     height: 48px;

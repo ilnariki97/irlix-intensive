@@ -6,33 +6,97 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="card.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="colors/colors.css">
+    <link rel="stylesheet" href="styles/card.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
     <title>IRLEX</title>
 </head>
 <body>
 <header class="header">
-    <div class="header_text">
-        <h1>Главная</h1>
-        <h2>17 июля 2021</h2>
+    <div class="header__container">
+        <div class="header__text">
+            <h1 class="header__text__h1">Главная</h1>
+            <p class="header__text__date">17 июля 2021</p>
+        </div>
+        <div class="header__logo">
+            <img src="images/logo.svg" alt="logo"/>
+        </div>
     </div>
-    <div class="header_logo">
-        <img src="images/logo.svg" alt="logo"/>
-    </div>
+
+
 </header>
 
-
 <main class="cards_container">
-    <div class="card"><img src="images/background.svg" alt="bcg"/></div>
-    <div class="card"><img src="images/background.svg" alt="bcg"/></div>
-    <div class="card"><img src="images/background.svg" alt="bcg"/></div>
-    <div class="card"><img src="images/background.svg" alt="bcg"/></div>
+
+    <div class="card">
+        <img class="card__image" src="images/cardImage.png" alt="card-image"/>
+        <div class="discount">
+            <h1 class="discount__percent">40%</h1>
+            <p class="discount__category">Aлкоголь</p>
+        </div>
+        <div class="card__text">
+            <h1 class="card__text__name">Blackberry</h1>
+            <p class="card__text__description">Освежающий напиток</p>
+        </div>
+    </div>
+    <div class="card">
+        <img class="card__image" src="images/lime.png" alt="card-image"/>
+        <div class="discount">
+            <h1 class="discount__percent">40%</h1>
+            <p class="discount__category">Aлкоголь</p>
+        </div>
+        <div class="card__text">
+            <h1 class="card__text__name">Blackberry</h1>
+            <p class="card__text__description">Освежающий напиток</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img class="card__image" src="images/cardImage.png" alt="card-image"/>
+        <div class="discount">
+            <h1 class="discount__percent">40%</h1>
+            <p class="discount__category">Aлкоголь</p>
+        </div>
+        <div class="card__text">
+            <h1 class="card__text__name">Blackberry</h1>
+            <p class="card__text__description">Освежающий напиток</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img class="card__image" src="images/lime.png" alt="card-image"/>
+        <div class="discount">
+            <h1 class="discount__percent">40%</h1>
+            <p class="discount__category">Aлкоголь</p>
+        </div>
+        <div class="card__text">
+            <h1 class="card__text__name">Blackberry</h1>
+            <p class="card__text__description" >Освежающий напиток</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img class="card__image" src="images/lime.png" alt="card-image"/>
+        <div class="discount">
+            <h1 class="discount__percent">40%</h1>
+            <p class="discount__category">Aлкоголь</p>
+        </div>
+        <div class="card__text">
+            <h1 class="card__text__name">Blackberry</h1>
+            <p class="card__text__description" >Освежающий напиток</p>
+        </div>
+    </div>
+
+
 </main>
+
 <footer class="footer">
-    <button class="footer_button">Search</button>
+    <div class="footer__container">
+        <button class="footer__button">Поиск</button>
+    </div>
 </footer>
 </body>
 </html>
