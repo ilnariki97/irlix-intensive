@@ -1,0 +1,134 @@
+* {
+    background-color: var(--main-bcg);
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 0 32px;
+    margin: 130px auto;
+    position: relative;
+}
+
+@media screen and (min-width: 500px) {
+    .cards-container {
+        justify-content: space-between;
+    }
+}
+
+.card {
+    width: 100%;
+    border-radius: 32px;
+    margin: 0 0 32px;
+    height: 420px;
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.card::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: var(--card-gradient);
+}
+
+@media screen and (min-width: 500px) {
+    .card {
+        width: calc(100% / 2 - 10px);
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .card {
+        width: calc(100% / 3 - 10px);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .card {
+        width: calc(100% / 4 - 10px);
+    }
+}
+
+@media screen and (min-width: 1750px) {
+    .card {
+        width: calc(100% / 6 - 10px);
+    }
+}
+.card__image {
+    width: 100%;
+    height: -webkit-fill-available;
+    position: relative;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    object-fit: cover;
+}
+.discount {
+    width: 64px;
+    height: 64px;
+    background-color: var(--discount-background);
+    position: absolute;
+    color: white;
+    top: 22px;
+    left: 18px;
+    border-radius: 24px;
+    padding: 8px;
+    text-align: right;
+}
+
+.discount__percent {
+    margin: 0;
+    font-size: 24px;
+    background: none;
+    font-weight: 700;
+}
+
+.discount__category {
+    margin: 0;
+    font-size: 14px;
+    background: none;
+    padding: 0;
+    font-weight: 300;
+    color: var(--paragraph-color);
+}
+
+.card__description {
+    position: absolute;
+    color: white;
+    bottom: 24px;
+    left: 18px;
+    text-align: left;
+    background: none;
+    z-index: 3;
+}
+
+.card__title {
+    margin: 0;
+    background: none;
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.07em;
+    text-align: left;
+
+}
+
+.card__subtitle {
+    margin: 0;
+    background: none;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21px;
+    text-align: left;
+    color: var(--paragraph-color);
+}
