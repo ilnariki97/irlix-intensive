@@ -4,5 +4,5 @@
     --footer-color: #0E0D13;
     --discount-background:#0E0D13;
     --paragraph-color: #C4C1CF;
-
+    --card-gradient:linear-gradient(180deg, rgba(0, 0, 0, 0) 48.96%, rgba(14, 13, 19, 0.9) 89.58%)
 }
