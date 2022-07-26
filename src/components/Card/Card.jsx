@@ -1,5 +1,5 @@
 import React from 'react';
-import cardImage from '../image/card-image.png'
+import cardImage from '../../image/card-image.png'
 
 
 function Card() {

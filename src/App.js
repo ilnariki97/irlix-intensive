@@ -1,7 +1,7 @@
 import './styles/style.scss';
-import Header from "./components/Header";
-import Main from "./components/Main";
-import Footer from "./components/Footer";
+import Header from "/Header";
+import Main from "./pages/Main/Main";
+import Footer from "./components/Footer/Footer";
 import Delete from "./components/delete";
 
 function App() {
