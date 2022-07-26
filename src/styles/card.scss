@@ -1,0 +1,91 @@
+.card {
+  border-radius: 32px;
+  height: 425px;
+  position: relative;
+  overflow: hidden;
+  object-fit: cover;
+
+  @media screen and (min-width: 400px) and (max-width: 629px) {
+      max-width: 325px;
+  }
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: var(--card-gradient);
+  }
+
+  &__image {
+    width: 100%;
+    height:inherit;
+    position: relative;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    object-fit: cover;
+  }
+
+  .discount {
+    width: 64px;
+    height: 64px;
+    background-color: var(--discount-background);
+    position: absolute;
+    color: white;
+    top: 22px;
+    left: 18px;
+    border-radius: 24px;
+    padding: 8px;
+    text-align: right;
+
+    .discount__percent {
+      margin: 0;
+      font-size: 24px;
+      background: none;
+      font-weight: 700;
+    }
+
+    &__category {
+      margin: 0;
+      font-size: 14px;
+      background: none;
+      padding: 0;
+      font-weight: 300;
+      color: var(--paragraph-color);
+    }
+  }
+  &__description {
+    position: absolute;
+    color: white;
+    bottom: 24px;
+    left: 18px;
+    text-align: left;
+    background: none;
+    z-index: 3;
+  }
+
+  &__title {
+    margin: 0;
+    background: none;
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.07em;
+    text-align: left;
+  }
+
+  &__subtitle {
+    margin: 0;
+    background: none;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21px;
+    text-align: left;
+    color: var(--paragraph-color);
+  }
+}

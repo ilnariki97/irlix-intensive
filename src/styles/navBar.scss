@@ -1,0 +1,23 @@
+
+ul {
+  display: flex;
+  list-style: none;
+  margin:0;
+  overflow: auto;
+}
+
+li {
+  padding: 7px 9px;
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--paragraph-color);
+  margin-right: 30px;
+  border: 1px solid transparent;
+  margin-bottom: 8px;
+}
+
+li:hover {
+  border: 1px solid var(--paragraph-color);
+  border-radius: 32px;
+  cursor: pointer;
+}
