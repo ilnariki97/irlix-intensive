@@ -1,15 +1,9 @@
 .main {
   padding: 0 32px;
+  margin-top: 170px;
 
   &__container {
-    //width: 100%;
-    //display: flex;
-    //flex-wrap: wrap;
-    //-webkit-box-pack: justify;
-    //justify-content: space-between;
-    //position: relative;
-
-    margin: 185px auto;
+    margin: 30px auto;
     justify-items: center;
     display: grid;
     grid-template-columns: 1fr;
