@@ -1,8 +1,8 @@
 import React from 'react';
-import "./Header.scss";
+import "./header.scss";
 import IrlixLogo from "../ui-kit/irlix-Logo";
 
-import NavBar from "../navBar/NavBar";
+
 
 export function Header() {
     return (
@@ -15,10 +15,9 @@ export function Header() {
                     </div>
                    <IrlixLogo/>
                 </div>
-                <NavBar/>
             </header>
         </div>
     );
 }
 
-export default {Header};
+export default Header;

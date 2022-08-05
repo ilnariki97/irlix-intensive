@@ -1,4 +1,10 @@
-
+.nav-bar{
+  //margin-top: 140px;
+  position: fixed;
+  width: 100%;
+  top: 120px;
+  z-index: 100;
+}
 ul {
   display: flex;
   list-style: none;
